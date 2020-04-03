@@ -10,3 +10,8 @@
   background: rgb(0,0,0);
 background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(162,0,255,1) 15%, rgba(4,0,255,1) 30%, rgba(0,151,255,1) 45%, rgba(69,255,0,1) 60%, rgba(255,252,0,1) 75%, rgba(255,106,0,1) 90%, rgba(255,0,0,1) 100%);
 }
+#bob{
+  height: 200px;
+  width: 590px;
+  background-image: radial-gradient(circle, red,orange,yellow,green,blue,indigo,violet);
+}
