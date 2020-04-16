@@ -5,16 +5,123 @@
     <meta name="viewport" content="width=device-width">
     <title>repl.it</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+      .accordion {
+        background-color: lime;
+        color: black;
+        cursor: pointer;
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+        outline: none;
+        transition: 2s;
+      }
+      .accordion:hover{
+        background-color: darkblue; 
+        color: white; 
+      }
+      .panel{
+        padding: 0 18px;
+        background-color: hotpink;
+        display: none;
+        overflow: hidden; 
+      }
+      .accordion2 {
+        background-color: crimson;
+        color: black;
+        cursor: pointer;
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+        outline: none;
+        transition: 1s;
+      }
+      .accordion2:hover{
+        background-color: black; 
+        color: white; 
+      }
+      .panel2{
+        padding: 0 18px;
+        background-color: yellow;
+        display: none;
+        overflow: hidden; 
+      }
+      .accordion3 {
+        background-color: gray;
+        color: black;
+        cursor: pointer;
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+        outline: none;
+        transition: 1.5s;
+      }
+      .accordion3:hover{
+        background-color: darkgreen; 
+        color: white;
+      }
+      .panel3{
+        padding: 0 18px;
+        background-color: aqua;
+        display: none;
+        overflow: hidden; 
+      }
+    </style>
   </head>
-  <body class="fun">
+  <body>
+    <button class="accordion">NIEHS</button>
+    <div class="panel">
+      <p> The NIEHS stand for the National Institute of Environmental Health Sciences. They study enviromental impact on human dieseas. This includes weather patterns and plants for medicine. </p> </div>
+    <button class="accordion2">Cannubis</button>
+    <div class="panel2">
+      <p> Cannubis, also know as weed, is a type of drug that effects the metal and physical health of someone. The main way to do this drug is to smoke it. We can see the use of this drug in the medical world, while also being used to feel good. In this section I will talk about what effects this druf has on the mind a body. </p></div>
+    <button class="accordion3">Psychadelics</button>
+    <div class="panel3">
+      <p> Psychadelics are drugs that alter realtity. I will be diving into how it does this and how what else it does to your body. </p></div>
     <script src="script.js"></script>
-    <div class="comp">
-    <img class="happy" src="nice.png" alt="Toxicology">
-    <div id="bob">
-      <img class="pic1" src="NIEHS.png" >
-<iframe width="400" height="315" src="https://www.youtube.com/embed/Y2uuNWznncU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen></iframe>
-<p> Here is a funny video that also shows the effects that smoking Cannubis can have on the body! </p>
+  <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+ acc[i].addEventListener("click", function() {
+   var panel = this.nextElementSibling;
+   if (panel.style.display === "block") {
+     panel.style.display = "none";
+   } else {
+     panel.style.display = "block";
+   }
+ });
+}
+ </script>
+ <script>
+var acc = document.getElementsByClassName("accordion2");
+var i;
+for (i = 0; i < acc.length; i++) {
+ acc[i].addEventListener("click", function() {
+   var panel = this.nextElementSibling;
+   if (panel.style.display === "block") {
+     panel.style.display = "none";
+   } else {
+     panel.style.display = "block";
+   }
+ });
+}
+ </script>
+ <script>
+var acc = document.getElementsByClassName("accordion3");
+var i;
+for (i = 0; i < acc.length; i++) {
+ acc[i].addEventListener("click", function() {
+   var panel = this.nextElementSibling;
+   if (panel.style.display === "block") {
+     panel.style.display = "none";
+   } else {
+     panel.style.display = "block";
+   }
+ });
+}
+ </script>
+
+
   </body>
 </html>
-
