@@ -5,6 +5,42 @@
     <meta name="viewport" content="width=device-width">
     <title>repl.it</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <img src="title.png">
+    <style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 15px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: purple;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="NIH.html">NIEHS</a></li>
+  <li><a href="Cannabis.html">Cannabis</a></li>
+  <li><a href="psych.html">Psychadelics</a></li>
+  <li><a href="AbMe.html">About Me</a></li>
+</ul>
     <style>
       .accordion {
         background-color: lime;
@@ -66,18 +102,25 @@
         display: none;
         overflow: hidden; 
       }
+      p{
+        text-align: center;
+      }
+      body{
+        color: black;
+      }
     </style>
   </head>
   <body>
+    <p> BY: Matthew Regan</p>
     <button class="accordion">NIEHS</button>
     <div class="panel">
       <p> The NIEHS stand for the National Institute of Environmental Health Sciences. They study enviromental impact on human dieseas. This includes weather patterns and plants for medicine. </p> </div>
-    <button class="accordion2">Cannubis</button>
+    <button class="accordion2">Cannabis</button>
     <div class="panel2">
-      <p> Cannubis, also know as weed, is a type of drug that effects the metal and physical health of someone. The main way to do this drug is to smoke it. We can see the use of this drug in the medical world, while also being used to feel good. In this section I will talk about what effects this druf has on the mind a body. </p></div>
+      <p> Cannabis, also know as weed, is a type of drug that effects the mental and physical health of someone. The main way to do this drug is to smoke it. We can see the use of this drug in the medical world, while also being used to feel good. In this section I will talk about what effects this drug has on the mind and body. </p></div>
     <button class="accordion3">Psychadelics</button>
     <div class="panel3">
-      <p> Psychadelics are drugs that alter realtity. I will be diving into how it does this and how what else it does to your body. </p></div>
+      <p> Psychadelics are drugs that alter realtity. The person will typically see things that are not really there. I will be diving into how it does this and what else it does to your body. </p></div>
     <script src="script.js"></script>
   <script>
 var acc = document.getElementsByClassName("accordion");
@@ -121,7 +164,5 @@ for (i = 0; i < acc.length; i++) {
  });
 }
  </script>
-
-
   </body>
 </html>
